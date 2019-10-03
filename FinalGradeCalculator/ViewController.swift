@@ -14,12 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var desiredGradeTextField: UITextField!
     @IBOutlet weak var finalExamWeightTextField: UITextField!
     @IBOutlet weak var resultsLabel: UILabel!
+    @IBOutlet weak var label: UILabel!
     
     var neededFinalExamGrade:Double?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        label.text = "It changed!"
     }
 
     @IBAction func onCalculateButtonTapped(_ sender: UIButton) {
